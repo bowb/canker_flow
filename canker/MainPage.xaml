@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="canker.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Entry  x:Name="username" Placeholder="username" />
+            <Entry  x:Name="password" IsPassword="true" Placeholder="password"/>
+
+            <Label
+                Text="Get the Data!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <Label  SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" Text="Push the button and get the data."/>
+                   
+             <Label  SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" Text="Pressing the GO button means I solemnly swear that I am up to no good"/>
+            
+             <Label  SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" Text="For reals play nice and there is no guarantee that your account won't get borked."/>  
+                              
+            <Button
+                x:Name="GoBtn"
+                Text="Go"
+                SemanticProperties.Hint="Get all the data"
+                Clicked="Go"
+                HorizontalOptions="Center" />
+            <Label  SemanticProperties.HeadingLevel="Level2" TextColor="Red"
+                x:Name="error"
+                SemanticProperties.Description="Error"
+                FontSize="18"
+                HorizontalOptions="Center" Text=""/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
